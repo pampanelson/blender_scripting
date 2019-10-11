@@ -24,4 +24,8 @@ obj.select_set(False)
 #     mat.diffuse_color = (i/1000,0.0,0.0,1.0)
 
 
+# duplicate material from template "matTemp" and change settings
 
+mat2 = bpy.data.materials["matTemp"].copy()
+mat2.name = "mat2"
+mat2.diffuse_color = (1.0,0.0,0.0,1.0)
