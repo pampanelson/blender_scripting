@@ -7,7 +7,6 @@ endFrame = 5
 scene = bpy.context.scene
 fp = scene.render.filepath # get existing output path
 scene.render.image_settings.file_format = 'PNG' # set output format to .png
- 
 
 obj = bpy.context.object                  # Reference to selected object
 all_materials   = obj.data.materials      # All the materials of the selected object
